@@ -154,7 +154,6 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  padding: 0 30px 25px;
   text-align: left;
 }
 #restaurants-list .restaurant-img {
@@ -164,6 +163,9 @@ nav h1 a {
   max-width: 100%;
   min-height: 248px;
   min-width: 100%;
+}
+#restaurants-list .text-wrapper {
+	padding: 20px;
 }
 #restaurants-list li h1 {
   color: #f18200;
