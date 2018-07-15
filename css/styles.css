@@ -340,4 +340,14 @@ nav h1 a {
 		width: 100%; /* full width */
 	}
 
+	/* Header */
+	nav h1 {
+		text-align: left;
+		padding-left: 15px;
+		line-height: 1em;
+	}
+	nav h1 a {
+		font-size: 12pt;
+	}
+
 }
