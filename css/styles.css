@@ -202,7 +202,7 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
+  height: calc(100% - 80px);
   position: fixed;
   right: 0;
   top: 80px;
@@ -217,6 +217,7 @@ nav h1 a {
   bottom: 0;
   position: absolute;
   width: 50%;
+	box-sizing: border-box;
 }
 #restaurant-name {
   color: #f18200;
@@ -252,6 +253,7 @@ nav h1 a {
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
   width: 50%;
+	box-sizing: border-box;
 }
 #reviews-container {
   padding: 30px 40px 80px;
