@@ -48,6 +48,17 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
 }
+
+/* ====================== Grid Setup ====================== */
+
+/*  Add basic column system */
+
+.col {
+	margin: 1% 0 1% 1.6%;
+	width: 31.73%; /* third */
+	box-sizing: border-box; /* To include margins/padding in sizes */
+}
+
 /* ====================== Navigation ====================== */
 nav {
   width: 100%;
@@ -136,16 +147,15 @@ nav h1 a {
   margin: 0;
   padding: 30px 15px 60px;
   text-align: center;
+	display: flex;
+	flex-wrap: wrap; 
 }
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  margin: 15px;
-  min-height: 380px;
   padding: 0 30px 25px;
   text-align: left;
-  width: 270px;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
