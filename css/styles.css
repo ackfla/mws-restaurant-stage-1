@@ -202,7 +202,7 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
-.inside header {
+.inside > header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -254,17 +254,17 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+  width: 90%;
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 140px 40px 30px;
   width: 50%;
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 #reviews-container {
-  padding: 30px 40px 80px;
+  padding: 30px 30px 80px 20px;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -277,20 +277,66 @@ nav h1 a {
   margin: 0;
   padding: 0;
 }
-#reviews-list li {
+
+/* Reviews block */
+#reviews-list article {
   background-color: #fff;
   border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
-  margin: 0 0 30px;
+  margin: 0 auto 30px auto;
   overflow: hidden;
-	padding: 20px;
+  padding: 0;
   position: relative;
-  width: 85%;
+  border-radius: 20px 0;
 }
-#reviews-list li p {
+
+/* Reviews header block */
+#reviews-list article header {
+	background-color: #252831;
+	color: #fff;
+	height: 40px; /* Fixed height */
+	margin-bottom: 15px; /* Spacing between reviews */
+	padding: 0 20px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center; /* Centre contents vertically */
+}
+
+/* Reviews header name */
+#reviews-list article header h3 {
+	text-align: left;
+	margin: 0;
+	font-weight: 300;
+}
+
+/* Reviews header date */
+#reviews-list article header h4 {
+	text-align: right;
+	margin: 0;
+	font-weight: 300;
+    font-size: 12px;
+	color: #d4d4d4;
+}
+
+/* Reviews rating */
+#reviews-list .rating {
+	display: inline-block;
+	padding: 2px 5px;
+	background-color: orange;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin: 0 20px;
+}
+
+#reviews-list article p {
   margin: 0 0 10px;
+  padding: 20px;
 }
+
 #restaurant-hours td {
   color: #666;
 }
@@ -330,7 +376,6 @@ nav h1 a {
 	.inside #restaurant-container {
 		padding: 40px 40px 30px;
 	}
-
 
 }
 
