@@ -152,7 +152,7 @@ nav h1 a {
   background-color: #f3f3f3;
   list-style: outside none none;
   /* To counteract 1.6% left padding on restaurant columns */
-  margin: 0 0 0 -1.6%; 
+  margin: 0 0 0 -1.6%;
   padding: 30px 15px 60px;
   text-align: center;
 	display: flex;
@@ -343,6 +343,11 @@ nav h1 a {
 	.col {
 		margin: 1% 0 1% 0;
 		width: 100%; /* full width */
+	}
+
+	/* Home page restaurant list ul */
+	#restaurants-list {
+		margin: 0; /* Remove undded left padding */
 	}
 
 	/* Header */
