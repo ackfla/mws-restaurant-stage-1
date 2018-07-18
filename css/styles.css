@@ -35,6 +35,23 @@ h1, h2, h3, h4, h5, h6 {
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+/* skip to main content button*/
+.skip-link {
+	position: absolute;
+    text-transform: uppercase;
+    top: -40px;
+    color: #fff;
+    background-color: #e74507;
+    padding: 5px 10px;
+	z-index: 100;
+}
+/* On focus display on page */
+.skip-link:focus {
+	top: 0;
+	color: #fff;
+}
+
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
@@ -220,6 +237,7 @@ nav h1 a {
   background-color: #ccc;
   height: 100%;
   width: 100%;
+  z-index: 0;
 }
 .inside #footer {
   bottom: 0;
