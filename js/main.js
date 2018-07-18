@@ -2,16 +2,12 @@ let restaurants,
   neighborhoods,
   cuisines
 var newMap
-var markers = []
+var markers = [];
 
 /**
  * Register service worker
  */
-registerServiceWorker = () => {
-  navigator.serviceWorker.register('/sw.js');
-}
-
-registerServiceWorker();
+(() => { navigator.serviceWorker.register('/sw.js') })();
 
 /**
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
