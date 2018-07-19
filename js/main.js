@@ -175,7 +175,7 @@ createRestaurantHTML = (restaurant) => {
   const textWrapper = document.createElement('div');
   textWrapper.className = 'text-wrapper';
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h2');
   name.innerHTML = restaurant.name;
   textWrapper.append(name);
 

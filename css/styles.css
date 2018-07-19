@@ -191,7 +191,7 @@ nav h1 a {
 #restaurants-list .text-wrapper {
 	padding: 20px;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 14pt;
@@ -330,7 +330,7 @@ nav h1 a {
 }
 
 /* Reviews header date */
-#reviews-list article header h4 {
+#reviews-list article header time {
 	text-align: right;
 	margin: 0;
 	font-weight: 300;
